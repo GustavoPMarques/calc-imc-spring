@@ -11,7 +11,7 @@ public class CalculadoraImcService {
     public BigDecimal calcular(String nome, String altura, String peso) {
         BigDecimal alt = toBigDecimal(altura);
         BigDecimal pes = toBigDecimal(peso);
-        BigDecimal resultado = pes.divide((alt.pow(2)),6, RoundingMode.HALF_UP);;
+        BigDecimal resultado = pes.divide((alt.pow(2)),2, RoundingMode.HALF_UP);;
 
         return resultado;
     }
